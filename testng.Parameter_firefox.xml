@@ -2,8 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="E:/git repo/REST_Assured">
+
+        <parameter name="browser" value="Firefox"></parameter>
         <classes>
-            <class name="org.example.ex_01_RestAssured_HelloWorld.HelloWorld">
+            <class name="org.example.ex_04_TestNGAdvanceExample.APITesting019_TestNG_Parameter">
                 <methods>
                     <include name="testHelloWorld"/>
                 </methods>

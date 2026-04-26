@@ -2,11 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="E:/git repo/REST_Assured">
+        <groups>
+            <run>
+                <include name="smoke">
+                </include>
+            </run>
+        </groups>
+
         <classes>
-            <class name="org.example.ex_01_RestAssured_HelloWorld.HelloWorld">
-                <methods>
-                    <include name="testHelloWorld"/>
-                </methods>
+            <class name="org.example.ex_04_TestNGAdvanceExample.APITesting017_TestNG_Groups">
             </class>
         </classes>
     </test>
